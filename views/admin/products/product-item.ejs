@@ -1,0 +1,9 @@
+
+<article class="product-item">
+        <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
+        <h3><%= product.title %></h3>
+        <div class="actions">
+           <a class= "button btn-alt" href="/admin/products/<%= product.id %>">View & Edit</a>
+           <button class="button btn-alt" data-productid="<%= product.id %>" data-csrf="<%= locals.csrfToken %>">Delete</button>
+    </div>
+ </article>

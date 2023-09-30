@@ -1,0 +1,23 @@
+<%- include('../../sharing/head', { pageTitle: 'Update product'}) %>
+<link rel="stylesheet" href="/styles/form.css">
+</head>
+
+<%- include('../../sharing/header') %>
+
+<style>
+    h1{
+      margin: 1rem 0;
+    }
+</style>
+
+<body>
+    <main>
+
+     <h1>Update product</h1>
+
+     <%- include('product-form', {submitPath: '/admin/products/' + product.id, product:product, imageRequired: false}) %>
+    
+    </main>
+
+<%- include('../../sharing/footer') %>
+    

@@ -1,0 +1,21 @@
+<%- include('../sharing/head', { pageTitle: 'Products'}) %>
+<link rel="stylesheet" href="/styles/products.css">
+
+</head>
+<%- include('../sharing/header') %>
+<body>
+    <main>
+     <h1> The dress's are .....</h1>
+     
+     <ul id="products-grid">
+        <% for(const product of products) { %>
+        <li>
+        <%- include('product-item-customer', { product: product} ) %> 
+        </li>
+        <% } %>
+     </ul>
+
+    </main>
+
+<%- include('../sharing/footer') %>
+    
